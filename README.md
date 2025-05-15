@@ -13,4 +13,16 @@ This project demonstrates a simple client-server application using the Model Con
 - Users interact with the client via the terminal, typing messages and receiving AI-generated responses.
 - When the AI decides to call a tool, the client sends the request to the server and displays the tool's response.
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 16 or higher recommended)
+- Twitter Developer account and API credentials:
+  - `TWITTER_API_KEY`
+  - `TWITTER_API_SECRET`
+  - `TWITTER_ACCESS_TOKEN`
+  - `TWITTER_ACCESS_TOKEN_SECRET`
+- Google Gemini API key:
+  - `GEMINI_API_KEY`
+
+
 
