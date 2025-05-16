@@ -23,6 +23,75 @@ This project demonstrates a simple client-server application using the Model Con
   - `TWITTER_ACCESS_TOKEN_SECRET`
 - Google Gemini API key:
   - `GEMINI_API_KEY`
+ 
+### Server
 
+1. Navigate to the `server` directory:
+
+   ```bash
+   cd server
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the `server` directory with your Twitter API credentials:
+
+   ```
+   TWITTER_API_KEY=your_api_key
+   TWITTER_API_SECRET=your_api_secret
+   TWITTER_ACCESS_TOKEN=your_access_token
+   TWITTER_ACCESS_TOKEN_SECRET=your_access_secret
+   ```
+
+4. Start the server:
+
+   ```bash
+   node server.js
+   ```
+
+   The server will start and listen on [http://localhost:3001](http://localhost:3001).
+
+### Client
+
+1. Open a new terminal and navigate to the `client` directory:
+
+   ```bash
+   cd client
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the `client` directory with your Google Gemini API key:
+
+   ```
+   GEMINI_API_KEY=your_gemini_api_key
+   ```
+
+4. Run the client:
+
+   ```bash
+   node index.js
+   ```
+
+5. Interact with the AI in the terminal. You can ask questions or request actions like adding numbers or posting a tweet.
+
+## Notes
+
+- The client and server communicate over SSE, so ensure the server is running before starting the client.
+- The Twitter posting tool requires valid Twitter API credentials and appropriate permissions.
+- The AI uses Google Gemini to generate responses and decide when to call server tools.
+- This project is a demonstration of integrating AI with custom tools in a client-server architecture.
+
+## License
+
+This project is provided as-is under the MIT License.
 
 
