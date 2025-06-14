@@ -32,7 +32,25 @@ server.tool(
     };
   }
 );
-
+server.tool(
+  "subtractTwoNumbers",
+  "Subtract two numbers",
+  {
+    a: z.number(),
+    b: z.number(),
+  },
+  async (arg) => {
+    const { a, b } = arg;
+    return {
+      content: [
+        {
+          type: "text",
+          text: `The subtraction of ${a} and ${b} is ${a - b}`,
+        },
+      ],
+    };
+  }
+);
 server.tool(
   "createPost",
   "Create a post on X formerly known as Twitter ",
